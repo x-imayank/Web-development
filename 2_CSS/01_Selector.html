@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* This is a universal selector. */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Class selector */
+        .first {
+            margin-top: 14px;
+            background-color: red;
+        }
+
+        .block {
+            background-color: blue;
+            color: white;
+        }
+
+        /* ID selector */
+        #paragraph {
+            background-color: yellow;
+        }
+
+        /* child selector */
+        div>p {
+            background-color: green;
+            color: white;
+        }
+
+        /* Decendent selector */
+        span p{
+            background-color: red;
+        }
+
+        /* Pseudo selector (This turns color of google black after website visited)*/
+        a:visited{
+            color: rgb(5, 5, 5);
+        }
+
+        /* This turns color of link blue which is not visited */
+        a:link{
+            color: blue;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: rgb(146, 146, 118);
+        }
+
+        /* This is use for making first element of paragraph coloured */
+        p:first-child{
+            background-color: rgb(86, 86, 63);
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <p>I am first child.</p>
+        <p>I am second child.</p>
+    </main>
+    
+    <div class="first">
+        Hey this is an inline element.
+
+        <article>
+            <p>I'm not a direct child of div thats why i'm not turning green color.</p>
+            
+        </article>
+
+        <p>Hey i'm a direct child of div.</p>
+    </div>
+
+
+    <span class="block">
+        Hey this is a block element.
+        <article>
+            <p>I'm a decendent selector.</p>
+        </article>
+    </span>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis amet eius placeat quas
+        nulla sed
+        maxime, consequatur nihil ullam iure architecto repellat consectetur voluptas illum officia, inventore minima
+        accusantium sapiente error, magnam et tempore corporis nobis. Delectus, qui. Qui provident harum ullam natus
+        quas?</p>
+
+        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.facebook.com">Facebook</a>
+</body>
+
+</html>
