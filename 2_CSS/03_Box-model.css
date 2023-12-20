@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    background-color: red;
+    height: 20px;
+    margin: 4px 5px 2px 12px; /*Top Right Bottom Left*/
+    padding: 22px;
+    color: yellow;
+    border: 2px solid black;
+    /* box-sizing: border-box; It changes the height of box padding + border*/
+}
+
+.box2 {
+    background-color: rgb(244, 130, 130);
+    height: 20px;
+    margin: 14px 5px 2px 12px; /*Top Right Bottom Left*/
+    padding: 22px;
+
+}
+
+/* Margin collaps = when the upper and lower box margin are same then they collaps with same margin. but if the one box margin is greater than other then it is use in middile of box. */
