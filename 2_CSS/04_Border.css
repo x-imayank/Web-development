@@ -1,0 +1,40 @@
+.dotted{
+    border-style: dotted;
+    border-width: 7px; /*It makes the width in border.*/
+    border-color: red; /*It makes color in border.*/
+}
+.solid{
+    border-style: solid;
+    border-width: thick;
+    border-radius: 14px; /*Round the border*/
+}
+.double{
+    border-style: double;
+    border-width: medium;
+}
+.grooved{
+    border-style: groove;
+    border-width: 7px;
+}
+.ridged{
+    border-style: ridge;
+    border-width: 7px 2px 1px 10px; /*Change in width form top right bottom left */
+}
+.inset{
+    border-style: inset;
+    border-width: 7px;
+}
+.outset{
+    border-style: outset;
+    border-width: 7px;
+}
+.none{
+    border-style: none;
+}
+.hidden{
+    border-style: hidden;
+}
+.mix-style{
+    border-style: dotted double outset ridge;
+    border-width: 7px;
+}
