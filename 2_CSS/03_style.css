@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    display: inline-block;
+    background-color: red;
+    padding: 21px;
+}
+
+.second {
+    display: inline-block;
+    background-color: yellow;
+    padding: 21px;
+    opacity: 0.6;
+}
+
+.third {
+    display: inline-block;
+    background-color: skyblue;
+    padding: 21px;
+    opacity: 0.3;
+    /*It makes the bgc transparency effect.*/
+}
+
+.rgba {
+    background-color: rgba(1110, 28, 50, 0.3);
+    /*Red green blue with 0.3(alpha) transparent*/
+    margin: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.background-image {
+    background-image: url(https://source.unsplash.com/random/200x200?sig=1);
+    /*Background random image*/
+
+    background-repeat: repeat-x;
+    /*Repeat bgi in x direction*/
+
+    background-position: right top;
+    /*Position of image is top right*/
+    color: blue;
+    padding: 50px;
+}
+
+.more-image-tags {
+    background-image: url(/stuff/download.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    background-attachment: fixed; /*It fix the image in background when we scroll it stick on there position*/
+    
+    background-attachment: fixed; /*It fix the image in background when we scroll it stick on there position*/
+
+
+    background-attachment: scroll; /*It scroll the image in background*/
+}
