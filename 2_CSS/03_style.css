@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .first {
     display: inline-block;
     background-color: red;
@@ -49,11 +44,19 @@
     background-image: url(/stuff/download.jpeg);
     background-repeat: no-repeat;
     background-position: right;
-    
-    background-attachment: fixed; /*It fix the image in background when we scroll it stick on there position*/
-    
-    background-attachment: fixed; /*It fix the image in background when we scroll it stick on there position*/
+
+    background-attachment: fixed;
+    /*It fix the image in background when we scroll it stick on there position*/
+
+    background-attachment: fixed;
+    /*It fix the image in background when we scroll it stick on there position*/
 
 
-    background-attachment: scroll; /*It scroll the image in background*/
+    background-attachment: scroll;
+    /*It scroll the image in background*/
+}
+
+.shorthand-property {
+    background: url(/stuff/download.jpeg) no-repeat fixed right bottom;
+    /*All the property lies in same line of code this is called shorthand property of css.*/
 }
