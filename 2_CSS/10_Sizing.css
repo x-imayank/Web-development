@@ -6,6 +6,10 @@ html{
     font-size: 10px; /*It makes all the letter 10px*/
 }
 
+/* body{
+    height: 100vh;
+} */
+
 .box {
     box-sizing: border-box;
     border: 2px solid black;
@@ -42,6 +46,13 @@ html{
     /*It increase the font size by 2x from main container font size*/
 }
 
+.mycont{
+    background-color: red;
+    color: yellow;
+    font-size: 22px;
+    width: 100vmax;
+}
+
 /* '
 px = It is the vaalue of display size of our gadget.like my laptop width is 1536px after this the vertical scroll bar show.
 
@@ -52,4 +63,6 @@ margin auto = it centered the box model with proper left right margin.
 em = em makes the size __em larger than the main parent size.like main container size is 20px and the inner container size is 2em them it makes 2x larger size or if 1.5em then it makes 1.5x then original size.
 
 rem = rem is linked with the root so when the main root takes some font size and when we write rem in their children cell then the children takes the size of font.
+
+vmin = for smrtphone and laptop the height and width are change. in laptop vmin width is the width of screen but in smartphone vmin width is the height of screen. 
 */

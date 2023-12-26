@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 50px 20px 0px 50px;
+    border-radius: 13px;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    color: red;
+    border-radius: 15px;
+    min-width: 160px;
+    z-index: 1;
+
+}
+
+.dropdown:hover .content {
+    display: block;
+}
