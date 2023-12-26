@@ -1,11 +1,21 @@
 
 
-div h1 {
+.first h1 {
     font-family: Sofia, cursive;
 }
-div h2{
+.first h2{
     font-family: Trirong;
 }
-div h3{
+.first h3{
     font-family: Audiowide;
+}
+
+.second h1{
+    font-family: Georgia;
+    background-color: red;
+    font-size: 43px;
+}
+.second p{
+    font-family: Verdana;
+    font-size: 15px;
 }
