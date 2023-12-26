@@ -1,0 +1,14 @@
+.border{
+    border: 2px dotted red;
+    border-width: 3px;
+    width: 300px;
+    margin: auto; /*It takes equal left and right margin with respect to the container*/
+}
+
+/*In h1 we take bottom 50 px and in h2 we take bottom 10px so, in margin collapse the greater margin will count and make 50px distance from h1 to h2*/
+.margin-collaps h1{
+    margin: 0px 0px 50px 0px;
+}
+.margin-collaps h2{
+    margin: 10px 0px 0px 0px;
+}
