@@ -1,24 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 10px; /*It makes all the letter 10px*/
+}
 
-.box{
+.box {
+    box-sizing: border-box;
     border: 2px solid black;
+    width: 50vw;
+    margin: auto;
+    background-color: yellow;
 
     /* width: 1536px;
     height: 731px; */
 
-    width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 
+}
+
+.container {
     box-sizing: border-box;
-    /* margin: 50px; */
-    background-color: yellow;
+    border: 2px solid black;
+    font-size: 2rem; /*It linked by html size because it is root element.*/
+
+    /* width: 50vw; */
+    /* height: 100vh; */
+
+    margin: 23px auto;
+    /*23px is the margin from top and bottom.*/
+    background-color: aquamarine;
+
+    /* width: 1536px;
+    height: 731px; */
+
+}
+
+.container p {
+    font-size: 2em; /*It is linked by the container element because it is the parent element.*/
+    /*It increase the font size by 2x from main container font size*/
 }
 
 /* '
 px = It is the vaalue of display size of our gadget.like my laptop width is 1536px after this the vertical scroll bar show.
 
 vw/vh =  by the help of viewing width/height box take any width according to the viewing screen.
+
+margin auto = it centered the box model with proper left right margin.
+
+em = em makes the size __em larger than the main parent size.like main container size is 20px and the inner container size is 2em them it makes 2x larger size or if 1.5em then it makes 1.5x then original size.
+
+rem = rem is linked with the root so when the main root takes some font size and when we write rem in their children cell then the children takes the size of font.
 */
