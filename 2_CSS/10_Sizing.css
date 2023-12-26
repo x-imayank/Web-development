@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 2px solid black;
+
+    /* width: 1536px;
+    height: 731px; */
+
+    width: 100vw;
+    height: 100vh;
+
+    box-sizing: border-box;
+    /* margin: 50px; */
+    background-color: yellow;
+}
+
+/* '
+px = It is the vaalue of display size of our gadget.like my laptop width is 1536px after this the vertical scroll bar show.
+
+vw/vh =  by the help of viewing width/height box take any width according to the viewing screen.
+*/
