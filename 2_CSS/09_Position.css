@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 2000px;
+    border: 4px solid green;
+    margin: 14px;
+    position: static;
+}
+
+.box {
+    height: 100px;
+    width: 80vw;
+    padding: 3px;
+    margin: 13px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.Box1 {
+    background-color: red;
+    position: absolute;
+    top: 0px;
+}
+
+.Box2 {
+    background-color: yellow;
+    position: relative; /*By the relative property we change the postion of box in any side*/
+    top: 50px;
+    left: 30px;
+    z-index: 0;
+    
+}
+
+.Box3 {
+    position: relative;
+    z-index: 1;
+    background-color: blue;
+
+}
+
+.Box4 {
+    position: static;
+    bottom: 20px; /*It doesnt work because its position is static.*/
+    background-color: orange;
+
+}
+.Box5 {
+    position: fixed;
+    background-color: purple;
+
+}
+.Box6 {
+    position: sticky;
+    width: 100px;
+    top: 20px;
+    background-color: rgb(241, 91, 11);
+}
+
+/*Static = in static position we cannot change the position of box
+
+Relative = In relative position we change the box place anywhere.
+
+z-index = By the help of z-index we make the box which lies up and which lies below.for using z-index we give higher value to the box which lies upward and give lower the value to which the box lies below to first box.
+
+Absolute = After giving position absolute the box find theit parent element and then it makes margin from that parent element not from body (if body is not parent element ).
+
+Fixed = By applying position fixed the box or contend are fixed throught the scrolling of page. in many website the ad are showing throughout the website it is due to position fixed property.
+
+Sticky = It stick throughout the website at one place.
+*/
