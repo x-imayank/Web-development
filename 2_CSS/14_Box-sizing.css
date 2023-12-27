@@ -1,3 +1,7 @@
+.box{
+    margin-block: 50px; /*Margin-block makes distance between two or more blocks in same order*/
+}
+
 .box1{
     border: 2px solid red;
     height: 30vh;
@@ -7,14 +11,14 @@
     text-align: center;
 }
 .box2{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border: 2px solid black;
     height: 30vh;
     width: 30vw;
     text-align: center;
 }
 .box3{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border: 2px solid black;
     height: 30vh;
     width: 30vw;
@@ -22,7 +26,7 @@
     text-align: center;
 }
 .box4{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border: 2px solid black;
     height: 30vh;
     width: 30vw;
