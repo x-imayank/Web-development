@@ -1,0 +1,24 @@
+div p{
+    border: 2px solid black;
+
+}
+div img{
+    display: block;
+    width: 24vw;
+    border: 2px solid black;
+}
+
+/* Applying media queries */
+@media screen and (max-width: 300px){
+    div p{
+        display: inline-block;
+        background-color: red;
+        color: black;
+        text-align: center;
+    }
+    div img{
+        display: inline-block;
+        margin-left: 35%;
+        margin-top: -10px;
+    }
+}
