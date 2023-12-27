@@ -1,0 +1,32 @@
+.box1{
+    border: 2px solid red;
+    height: 30vh;
+    width: 30vw;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.box2{
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 30vh;
+    width: 30vw;
+    text-align: center;
+}
+.box3{
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 30vh;
+    width: 30vw;
+    padding: 20px;
+    text-align: center;
+}
+.box4{
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 30vh;
+    width: 30vw;
+    text-align: center;
+}
+
+/* After appliyng border box to box1 the padding works but box size not increase. */
