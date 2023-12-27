@@ -1,0 +1,58 @@
+html {
+    font-size: 10px;
+    /*This is for giving size to every lettter.*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    background-color: rgb(0, 0, 255, 0.5);
+    font-size: 2rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.navigation ul li {
+    display: inline-block;
+
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navigation li a:hover {
+    background-color: rgb(0, 0, 255);
+    border-radius: 30px;
+    color: white;
+}
+
+
+/* Making dropdown button */
+.home{
+    position: relative;
+    display: inline-block;
+
+}
+.drop{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 500px;
+    padding: 22px;
+    cursor: pointer;
+}
+
+.home:hover .drop{
+    display: block;
+    width: 100px;
+}

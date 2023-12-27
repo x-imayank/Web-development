@@ -49,7 +49,7 @@ html{
 .mycont{
     background-color: red;
     color: yellow;
-    font-size: 22px;
+    font-size: 2em; /*It is linked by root so it change its size according to its parent(root)*/
     width: 100vmax;
 }
 
