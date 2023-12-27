@@ -1,0 +1,30 @@
+
+/* Pseudo class */
+.pseudo p:hover{
+    font-size: 23px;
+}/* Make font size larger when we hover on it.it apply only on 1st and 2nd paragraph because another all are in use below. */
+
+.pseudo p:first-child{
+    background-color: gold;
+} /*Selects every <p> elements that is the first child of its parent*/
+
+.pseudo p:nth-child(3){
+    color: red;
+} /*Selects every <p> element that is the first child of its parent*/
+
+.pseudo p:nth-last-child(2){
+    color: blue;
+} /* Selects every <p> element that is the second child of its parent, counting from the last child */
+
+
+/* Pseudo elements */
+.pseudo p::after{
+    content: " *** ";
+    color: brown;
+}
+
+.pseudo p::before{
+    content: "*** ";
+    color: brown;
+}
+
