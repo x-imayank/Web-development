@@ -29,6 +29,13 @@
     font-size: 30px;
 }
 
+@media screen and (max-width: 400px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* 
 The flex container properties are:
 
