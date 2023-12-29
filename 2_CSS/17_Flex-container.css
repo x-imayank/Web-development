@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap;  */
+    /* flex-flow: row; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+    background-color: rgba(10, 10, 255, 0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    border-radius:20px ;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+/* 
+The flex container properties are:
+
+flex-direction :- By this we change the direction of boxes.
+
+flex-wrap :- it makes the box in order when we decrease the screen resolutions.
+
+flex-flow :- It changes the flow of box in row or column.
+
+justify-content
+
+align-items
+
+align-content 
+
+*/
