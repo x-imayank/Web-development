@@ -10,14 +10,57 @@
     /* gap: 10px; */
     row-gap: 30px;
     column-gap: 10px;
+    grid-template-columns: 200px 200px 200px;
 
     /* grid-template-columns: 100px 200px 300px ; */
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 100px 250px ;
-    grid-auto-rows: 150px; /*Define for row templete which is not initilize any px.*/
+    /* grid-template-columns: 100px auto 100px; */
+    /* grid-template-rows: 100px 250px ; */
+    /* grid-auto-rows: 150px; Define for row templete which is not initilize any px. */
+
+    /* justify-content: center; */
+    /* align-content: center; */
+
+    grid-template-areas: "hdr hdr hdr"
+                        "sbr main main"
+                        "sbr main main"
+                        "ftr ftr ftr";
 }
 
 .box {
     border: 2px solid red;
     padding: 12px;
 }
+
+
+.box-1 {
+    grid-area: hdr;
+    height: 100px;
+    /* justify-self: end;
+    align-self: end; */
+    
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/3;
+    grid-row: 1/ span 2; */
+    /* grid-area: 1/1/3/3; shortcut for grid column and row. */
+}
+.box-2{
+    grid-area: sbr;
+    height: 100px;
+}
+.box-3{
+    grid-area: main;
+    height: 100px;
+}
+.box-4{
+    grid-area: ftr;
+    height: 100px;
+}
+
+/* 
+Grid-template-area :- by the help pf this we define all the rows and column in a single constant and then give all the constant to the boxes.
+
+grid-column/row : 1/3:- it increase the row or column of the boxes.
+
+grid-template-column :- it is use for making width of boxes in a right manner.
+*/
