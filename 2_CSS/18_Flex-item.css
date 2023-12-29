@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item {
+    background-color: blue;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.flex-item>div {
+    background-color: white;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    line-height: 70px;
+
+    flex-grow: 2;
+}
+
+
+
+
+/* The flex item properties are:
+
+align-self	:- Specifies the alignment for a flex item (overrides the flex container's align-items property)
+flex :-	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+flex-basis :- Specifies the initial length of a flex item
+flex-grow :- Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+flex-shrink :- Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+order :- Specifies the order of the flex items inside the same container
