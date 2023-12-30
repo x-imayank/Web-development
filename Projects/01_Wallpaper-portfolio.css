@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bodoni Moda',serif;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041358,#0b3308);
+}
+
+.heading{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.subheading{
+    font-size: 1em;
+    color: #ddd;
+    text-align: center;
+}
+
+.left-text{
+    flex-basis: 30%; /*It fix the widht of text box*/
+}
+
+
+.box{
+    display: grid;
+    column-gap: 20px;
+}
+
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 120px 120px 120px 120px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box{
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+/* Making Utility class */
+
+.row-2{
+    grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+
+.box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+
+}
