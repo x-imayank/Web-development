@@ -30,8 +30,18 @@
     /* transform: rotateY(180deg); */
 
     /* transform: scale(0.8) skew(20deg) translate(50%) rotate(180deg); */
-    transform: scale(0.8);
-    transform-origin: 50% 50%;
+
+
+    /* transform: rotate(45deg); */
+    /* transform-origin: top left; */
+    /* transform-origin: top right; */
+    /* transform-origin: top right; */
+
+    /* transform: scale(2);
+    transform-origin: top; */
+
+    /* transform: rotate(45deg);
+    transform-origin: 10% 0%; */
 
 }
 
