@@ -1,0 +1,56 @@
+.box {
+    margin: 100px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: blue;
+    /* transition: 0.5s; */
+
+    transition-duration: 2s;
+    /* transition-property: background-color; */
+    /* transition-property: border-radius, background-color; */
+    transition-property: border-radius, background-color, transform;
+    /* transition-delay: 0.5s ease; */
+
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+.box:hover {
+    background-color: purple;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.item{
+}
+
+.list{
+    font-size: 2em;
+    display: flex;
+    list-style: none;
+}
+
+.item ul li {
+    padding: 8px 10px;
+    transition: 0.5s ease-in;
+}
+
+.item ul li:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px);
+}
+
+
+
+
+/* 
+Transition-delay:- for when the transition will start.
+
+transition-duration
+
+Transition-property:- it is for the name of property which change in transition.
+
+Transition-timing-function:- From A point to B point how multiples roads taken.(ease, ease-in, ease-out, linear, ease-in-out, cubic-bezier(n,n,n))
+*/
