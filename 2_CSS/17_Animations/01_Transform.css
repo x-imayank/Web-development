@@ -1,0 +1,58 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    margin: 80px auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* transform: scale(0.4); */
+    /* transform: scaleX(0.4); */
+    /* transform: scaleY(0.4); */
+    /* transform: scale(0.4 , 2); */
+    /* transform: scaleZ(0.4); */
+
+    /* transform: skew(10deg, 20deg); */
+
+    /* transform: translate(20px,5px); */
+    /* transform: translate(50%,50%); */
+
+    /* transform: rotate(20deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+
+    /* transform: scale(0.8) skew(20deg) translate(50%) rotate(180deg); */
+    transform: scale(0.8);
+    transform-origin: 50% 50%;
+
+}
+
+
+/* 
+Transform Properties
+
+scale:- it change the size of box in x and y direction. the original size is 1. like scale(0.5,2) 0.5 in x dir. and 2 in y dir.
+
+skew:- It changes the boxin any angle which will be defined in x and y direction.
+
+translate:- Change the position of box in x and y direction.
+
+rotate:- Rotate the box in any direction.
+*/
+
+/* 
+Transform Origin
+
+left
+right
+center
+%
+*/
