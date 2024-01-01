@@ -40,4 +40,21 @@ else{
 
 // else-if
 
-marks marks = prompt("Enter your marks");
+const marks = prompt("Enter your marks: ");
+
+if(marks>=75 && marks <= 100){
+    console.log("First");
+}
+
+else if(marks >= 50 && marks < 75){
+    console.log("Second");
+}
+
+else if(marks >= 33 && marks < 50){
+    console.log("Third");
+}
+
+else{
+    console.log("Fail");
+}
+
