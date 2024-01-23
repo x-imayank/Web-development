@@ -5,4 +5,5 @@ let text = prompt('Enter your name here: ');
 
 // String concatination.
 let text2 = 'Good morning';
-console.log(text + ' ' + text2)
+console.log(text + ' ' + text2) 
+
