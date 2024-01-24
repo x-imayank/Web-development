@@ -7,6 +7,7 @@ console.log(a / b);// Divide
 console.log(a % b);// Remainder
 
 
+
 // 41% of 2499.
 var c = 2499;
 var d = (c * 41) / 100;
