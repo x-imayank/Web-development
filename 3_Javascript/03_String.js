@@ -7,3 +7,4 @@ let text = prompt('Enter your name here: ');
 let text2 = 'Good morning';
 console.log(text + ' ' + text2) 
 
+
