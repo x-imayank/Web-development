@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+   <h1>Bat ball wicket game.</h1>
+   <button onclick="console.log('You select Bat');
+   let randomNum = Math.random()*3;
+
+   let comptChoice;
+   if(randomNum > 0 && randomNum<=1){
+      comptChoice = 'Bat';
+      console.log('Computer choice is Bat');
+   }
+   else if(randomNum > 1 && randomNum <= 2){
+      comptChoice = 'Ball';
+      console.log('Computer choice is Ball');
+   }
+   else{
+      comptChoice = 'Wicket';
+      console.log('Computer choice is Wicket');
+   }
+
+   if(comptChoice === 'Ball'){
+      console.log('User won.')
+   }
+   else if(comptChoice === 'Bat'){
+      console.log('Draw')
+   }
+   else{
+      console.log('Computer won.');
+   }
+   ">Bat</button>
+
+
+   <button onclick="console.log('You select Ball');
+   let randomNm = Math.random()*3;
+
+   let comptChoic;
+   let user;
+   if(randomNum > 0 && randomNum<=1){
+      comptChoic = 'Bat';
+      console.log('Computer choice is Bat');
+   }
+   else if(randomNum > 1 && randomNum <= 2){
+      comptChoice = 'Ball';
+      console.log('Computer choice is Ball');
+   }
+   else{
+      comptChoice = 'Wicket';
+      console.log('Computer choice is Wicket');
+   }
+
+   if(comptChoice === 'Ball'&& user === 'Bat'){
+      console.log('User won.')
+   }
+   else if(comptChoic === 'Bat' && user === Wicket){
+      console.log('User won')
+   }
+   else{
+      console.log('Computer won.');
+   }">Ball</button>
+
+
+   <button>Wicket</button>
+</body>
+
+</html>
