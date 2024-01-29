@@ -1,0 +1,69 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+  
+  
+  * {
+     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+     margin: 0;
+     padding: 0;
+     
+   }
+   body{
+
+      background-image: url(/png.png);
+   }
+
+  .container {
+     /* margin-left: 8%;
+     margin-right: 8%; */
+     max-width: 1180px;
+     margin-inline: auto;
+
+  }
+
+  header h1 {
+
+     float: left;
+     margin-top: 3%;
+     font-size: 30px;
+     color: rgb(192, 132, 132);
+  }
+
+  header a {
+     margin-top: 3%;
+     float: right;
+  }
+
+  
+
+  main {
+     display: inline-block;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+
+  main h2 {
+     margin-top: 40%;
+     margin-left: 50%;
+     font-family: Josefin Sans,Verdana, Geneva, Tahoma, sans-serif;
+     font-size:xx-large;
+     color: rgb(202, 231, 244);
+  }
+
+  main p {
+     margin-top: 6%;
+     text-align: center;
+     width: 80%;
+     margin-left: 23%;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: azure;
+     
+   }
+   
+   footer {
+      text-align: center;
+      margin-top: 20%;
+      margin-left: 2%;
+      color: azure;
+   }
