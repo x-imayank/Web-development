@@ -6,10 +6,15 @@
    <title>Document</title>
 </head>
 <body>
-   <h1></h1>
+   <h1>Unchanged</h1>
 
    <script>
       var a = document.querySelector("h1");
+      a.addEventListener("click",function(){
+         a.innerHTML = "Changed";
+         a.style.color = "Yellow";
+         a.style.backgroundColor = "red";
+      })
       
    </script>
 </body>
