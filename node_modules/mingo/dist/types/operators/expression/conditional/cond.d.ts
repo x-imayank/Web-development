@@ -1,0 +1,12 @@
+/**
+ * Conditional Expression Operators: https://docs.mongodb.com/manual/reference/operator/aggregation/#conditional-expression-operators
+ */
+import { ExpressionOperator } from "../../../core";
+/**
+ * A ternary operator that evaluates one expression,
+ * and depending on the result returns the value of one following expressions.
+ *
+ * @param obj
+ * @param expr
+ */
+export declare const $cond: ExpressionOperator;

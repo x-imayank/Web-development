@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "prompt": "^1.3.0",
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "save": "^2.9.0"
   },
   "name": "web-development",
   "description": "In this Repo i proveide all the Html, Css and Javascript codes for beginners.",

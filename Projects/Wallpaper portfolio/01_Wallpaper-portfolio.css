@@ -17,7 +17,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-    background: linear-gradient(to right, #041358,#0b3308);
+    background: linear-gradient(to right, #1fdc06,#972eed);
 }
 
 .heading{
