@@ -9,7 +9,7 @@ sign = prompt("Enter your sign here: ");
 
 let random = Math.random();
 console.log(random);
-
+ 
 switch (sign) {
      case '+':
           if (random > 0.1) {
