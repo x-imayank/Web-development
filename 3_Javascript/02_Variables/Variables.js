@@ -8,3 +8,19 @@ y = undefined;
 bool = false; // Boolian
 
 console.log(fullName, "\n", age, "\n", price, "\n", x, "\n", y, "\n", typeof bool);
+
+
+// var,let,const.
+
+let FullName = "Tony";
+let Age = 24;
+Age = 12; // Change the value of Age
+
+console.log(FullName, Age);
+
+const name = "Tony";
+name = "Stark" // We didnt change the value of const.
+
+console.log("\n", name);
+
+
