@@ -1,2 +1,5 @@
 fullName = "Tony stark"; // Declare a variable.
-console.log(fullName);
+age = 24;
+price = 121;
+
+console.log(fullName, age, price);
