@@ -2,4 +2,7 @@ fullName = "Tony stark"; // Declare a variable.
 age = 24;
 price = 121;
 
-console.log(fullName, age, price);
+x = null;
+y = undefined;
+
+console.log(fullName, "\n", age, "\n", price, "\n", x, "\n", y);
