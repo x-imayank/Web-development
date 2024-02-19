@@ -49,3 +49,13 @@ console.log("1" + 3 + 2);
 
 console.log(3 + 4 * 5 % 3);
 console.log((3 + 4) * (5 % 3));
+
+// Tricky questions
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+
+let count = 100;
+count++;
+console.log(count) // 101
