@@ -12,6 +12,13 @@ let isLoggedIn = false // Boolian
 console.log(typeof name) // (typeof ) tells the type of datatype 
 console.log(typeof null) // It returns object it is also known as the fault of javascipt.
 
+const score = 100;
+const scoreValue = 100.3;
+
+const isLogged = false;
+const outSideTemp = null;
+let userEmail; // It declairs undefined value.
+
 
 // Primitive
 
