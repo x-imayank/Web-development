@@ -11,3 +11,10 @@ let isLoggedIn = false // Boolian
 
 console.log(typeof name) // (typeof ) tells the type of datatype 
 console.log(typeof null) // It returns object it is also known as the fault of javascipt.
+
+
+// Primitive
+
+// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+
+// Refrence type (Non-premitive)= Arrays, Objects, Functions
