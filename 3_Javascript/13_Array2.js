@@ -18,3 +18,14 @@ console.log(allHeroes);
 
 const all_new_heroes = [...marval_heroes, ...dc]
 console.log(all_new_heroes)
+
+// Making array
+console.log(Array.isArray("Hello")); // Checking is it array or not.
+console.log(Array.from("Hello"))// Making array
+
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3)) 
