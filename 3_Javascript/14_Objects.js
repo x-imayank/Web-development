@@ -25,3 +25,4 @@ JsUser.greeting = function () {
 
 console.log(JsUser.greeting); // It returns undefined
 console.log(JsUser.greeting()); 
+
