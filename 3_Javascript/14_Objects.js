@@ -24,5 +24,13 @@ JsUser.greeting = function () {
 }
 
 console.log(JsUser.greeting); // It returns undefined
-console.log(JsUser.greeting()); 
+console.log(JsUser.greeting());
 
+newUser = {
+     name: "Subham",
+     age: Number(14),
+}
+
+Object.freeze(newUser)
+newUser.name = "Mayank";
+console.log(newUser.name)

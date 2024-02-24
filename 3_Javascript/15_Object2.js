@@ -25,3 +25,5 @@ const obj2 = { 3: "c", 4: "d" }
 
 const newobj = Object.assign(obj1, obj2)
 console.log(newobj)
+
+

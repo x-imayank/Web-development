@@ -1,3 +1,6 @@
+const Prompt = require("prompt-sync")
+
+let a = prompt("Enter name: ")
 function sayMyName() {
      console.log("M")
      console.log("A")
@@ -39,3 +42,5 @@ function loginUser(username) {
 
 // console.log(loginUser("Mayank"));
 console.log(loginUser()); // It returns undefined
+
+
