@@ -1,6 +1,5 @@
-const Prompt = require("prompt-sync")
+const prompt = require("prompt-sync")({ sigint: true });
 
-let a = prompt("Enter name: ")
 function sayMyName() {
      console.log("M")
      console.log("A")
@@ -42,5 +41,27 @@ function loginUser(username) {
 
 // console.log(loginUser("Mayank"));
 console.log(loginUser()); // It returns undefined
+
+
+const name1 = prompt("Enter your name: ")
+const email1 = prompt("Enter your email: ")
+const age1 = prompt("Enter your age: ")
+newUser = {
+     name: "",
+     email: "",
+     age: "",
+}
+
+newUser.name = name1;
+newUser.email = email1;
+newUser.age = Number(age1);
+
+console.log(newUser.name)
+console.log(newUser.email)
+console.log(newUser.age)
+console.log(typeof newUser.age)
+
+let a = Number(prompt());
+console.log(typeof a)
 
 
