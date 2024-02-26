@@ -65,3 +65,4 @@ let a = Number(prompt());
 console.log(typeof a)
 
 
+
