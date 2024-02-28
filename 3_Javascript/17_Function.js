@@ -66,3 +66,16 @@ console.log(typeof a)
 
 
 
+let name = prompt("Enter your name here: ");
+let age = Number(prompt("Enter your age here: "));
+
+second = {
+     name1: "",
+     age2: "",
+}
+
+second.name1 = name;
+second.age2 = age;
+
+console.log(second);
+console.log(typeof second.age2);
