@@ -30,3 +30,14 @@ object({
      username: "Sam",
      prices: 399
 })
+
+
+// Array
+
+const myArray = [200, 400, 600, 800];
+
+function returnArray(getArray) {
+     return getArray[2];
+}
+
+console.log(returnArray(myArray));
