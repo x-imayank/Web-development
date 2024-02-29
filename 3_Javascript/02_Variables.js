@@ -12,6 +12,7 @@ console.log(fullName, "\n", age, "\n", price, "\n", x, "\n", y, "\n", typeof boo
 
 // var,let,const.
 
+
 let FullName = "Tony";
 let Age = 24;
 Age = 12; // Change the value of Age
