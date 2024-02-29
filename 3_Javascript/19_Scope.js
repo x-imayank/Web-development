@@ -17,3 +17,10 @@ var c = 12
 console.log(c)
 // console.log(b)
 // console.log(c)
+
+if(true){
+     let a = 2
+     const b = 3
+     var c = 4
+}
+
