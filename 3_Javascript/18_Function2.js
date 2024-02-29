@@ -41,3 +41,12 @@ function returnArray(getArray) {
 }
 
 console.log(returnArray(myArray));
+
+
+const ary = [10,20,11,22];
+
+function newArray(input){
+     return input[3];
+}
+
+console.log(newArray(ary))
