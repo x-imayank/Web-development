@@ -50,3 +50,4 @@ function newArray(input){
 }
 
 console.log(newArray(ary))
+
