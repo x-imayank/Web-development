@@ -1,0 +1,3 @@
+Object new = {
+    "name = "Javascript"
+}
