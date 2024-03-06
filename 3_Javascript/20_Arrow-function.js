@@ -1,3 +1,0 @@
-Object new = {
-    "name = "Javascript"
-}

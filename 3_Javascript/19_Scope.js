@@ -8,7 +8,7 @@ if (true) {
      console.log("Inner", a)
      console.log("Inner", c)
 
-}
+} // These curly braces declears scope in js.
 
 let a = 20
 console.log(a)
