@@ -61,3 +61,27 @@ console.log("\n")
 
 // Truthy values
 // "0", 'false', " ", [], {}, function(){}
+
+const userEmail = [];
+if (userEmail.length === 0) {
+    console.log("Array is empty");
+}
+
+const emptyObj = {}
+
+if (Object.keys(emptyObj).length === 0) {
+    console.log("Object is empty");
+}
+
+console.log("\n")
+// Nullish coalescing operator (??): null undefined
+
+let val1;
+val1 = null ?? 10 // If null comes then print 10
+val1 = undefined ?? 15 // if undefined comes then print 15
+
+console.log(val1)
+
+// Ternery operators
+const iceTeaPrice = 100;
+iceTeaPrice <= 80 ? console.log("Less than 80") : console.log("Not less than 80")
