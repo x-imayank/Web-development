@@ -9,6 +9,8 @@ const user = {
     }
 }
 
+console.log(user.WelcomeMessage())
 
 user.username = "Function";
 console.log(user.WelcomeMessage())
+
