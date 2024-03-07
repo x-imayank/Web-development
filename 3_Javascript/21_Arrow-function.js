@@ -5,7 +5,7 @@ const user = {
     website: "js.com",
 
     WelcomeMessage: function () {
-        console.log(`${this.username}, this is the username.`); //This keyword is use to assign value of given declearation.
+        console.log(`${this.username}, this is the username.`); //This keyword is use to assign value of given variable. it is only use in object
     }
 }
 
