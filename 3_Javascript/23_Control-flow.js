@@ -16,3 +16,8 @@ if (score < 300) {
 }
 // console.log(`user power: ${power}`) // in let it throws an error.
 
+
+
+
+const balance = 1000;
+if (balance > 500) console.log("True");
