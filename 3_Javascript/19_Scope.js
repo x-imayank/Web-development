@@ -1,6 +1,8 @@
 
 // { } //Scope
 
+const PromptSync = require("prompt-sync");
+
 // if (true) {
 //      let a = 10
 //      const b = 20
@@ -44,3 +46,4 @@ if (true) {
      // console.log(website) // The scope of website is in the if condition.
 }
 // console.log(username) // the scope of username in the if statement.
+
