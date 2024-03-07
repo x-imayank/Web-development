@@ -54,3 +54,10 @@ if (loggedInFromGoogle || loggedInFromemail) {
 
 
 console.log("\n")
+
+
+// Falsy values
+// false, 0, -0, BigInt On, "", null, undefined, NaN
+
+// Truthy values
+// "0", 'false', " ", [], {}, function(){}
