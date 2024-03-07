@@ -37,12 +37,20 @@ console.log("\n")
 
 
 // Using of nesting in real life
+
 const userLoggedIn = true;
 const debitCard = true;
 
-if (userLoggedIn && debitCard) {
+if (userLoggedIn && debitCard && 2 == 2) {
     console.log("Allow for shopping.")
 } else console.log("Not allow for shopping.")
+
+const loggedInFromGoogle = false;
+const loggedInFromemail = true;
+
+if (loggedInFromGoogle || loggedInFromemail) {
+    console.log("You are not a robot.")
+} else console.log("You are not allow for using this please logIn.")
 
 
 console.log("\n")
