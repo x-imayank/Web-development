@@ -8,3 +8,11 @@ if (false) {
 }
 
 // < , > , <= , >= , == , != , === , !==
+
+let score = 200;
+if (score < 300) {
+    let power = "fly";
+    console.log(`user power: ${power}`);
+}
+// console.log(`user power: ${power}`) // in let it throws an error.
+
