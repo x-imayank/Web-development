@@ -29,3 +29,4 @@ console.log(addOne(4))
 // eg.3 (object in function)
 const obj = () => ({ username: "Javascript" })
 console.log(obj())
+
