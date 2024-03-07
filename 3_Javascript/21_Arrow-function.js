@@ -14,3 +14,18 @@ console.log(user.WelcomeMessage())
 user.username = "Function";
 console.log(user.WelcomeMessage())
 
+
+// Arrow function
+// eg. 1
+const addTwo = (num1, num2) => {
+    return num1 + num2; // Explicit
+}
+console.log(addTwo(1, 2))
+
+// eg. 2
+const addOne = (num) => (num + 2) // Implicit
+console.log(addOne(4))
+
+// eg.3 (object in function)
+const obj = () => ({ username: "Javascript" })
+console.log(obj())
