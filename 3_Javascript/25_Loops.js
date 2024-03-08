@@ -21,3 +21,18 @@ for (let i = 0; i <= 10; i++) {
     }
     console.log(i)
 }
+
+// while
+
+let index = 0;
+while (index <= 10) {
+    console.log(`value of index ${index}`)
+    index = index + 2;
+}
+
+// do while
+
+do {
+    console.log(`value of index ${index}`)
+    index = index + 1;
+} while (index <= 10)
