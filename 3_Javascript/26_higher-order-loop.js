@@ -9,3 +9,4 @@ const name = "Hello world"
 for (const char of name) {
     console.log(`Each character of name is ${char}`)
 }
+
