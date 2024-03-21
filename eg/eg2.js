@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.css';
+const user = {
+	username: "Javascript",
+	website: "js.com",
 
-function App() {
-	return (
-		<h1> Hello World! </h1>
-	);
+	WelcomeMessage: function () {
+		console.log(`${this.username}, this is the username.`);
+	}
 }
 
-export default App;
+console.log(user.WelcomeMessage())
