@@ -19,6 +19,6 @@ const myObj = {
     'game2': 'Spiderman',
 }
 
-for (const key of myObj) {
-    console.log(key)
+for (const key in myObj) {
+    console.log(`${key} is use for ${myObj[key]}`);
 }
