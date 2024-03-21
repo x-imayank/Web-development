@@ -22,3 +22,8 @@ const myObj = {
 for (const key in myObj) {
     console.log(`${key} is use for ${myObj[key]}`);
 }
+
+const programming = ["js", "rb", "py", "java", "cpp"]
+for (const key in programming) {
+    console.log(key)
+}
