@@ -51,4 +51,12 @@ console.log(filt)
 // map callback function
 let number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const new1 = number.map((num) => num + 10)
-console.log(new1)
+// console.log(new1)
+
+
+// Chaining :- including many functions
+const newNums1 = number
+    .map((a) => a * 10)
+    .map((b) => b + 1)
+    .filter((c) => c > 41)
+console.log(newNums1)
