@@ -27,3 +27,22 @@ const programming = ["js", "rb", "py", "java", "cpp"]
 for (const key in programming) {
     console.log(key)
 }
+
+// Advance
+// use of for each loop
+const mycoding = [
+    {
+        language:"javascript",
+        languageFileName: "js",
+    },
+    { 
+
+    },
+    {
+
+    }
+]
+
+mycoding.forEach((item) => {
+    console.log(item.language)
+})
