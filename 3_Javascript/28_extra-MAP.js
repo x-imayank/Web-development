@@ -1,5 +1,8 @@
 const programming = ["js", "rb", "py", "java", "cpp"]
 
-programming.forEach((item) => {
-    console.log(item.js)
+const values = programming.forEach((item) => {
+    console.log(item)
+    return item
 })
+
+//console.log(values) /*forEach loop didnt return anything*/
