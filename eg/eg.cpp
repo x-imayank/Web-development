@@ -1,35 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void bubblesort(vector<int> &arr)
+{
+    int n = arr.size();
+    for (int i = 0; i < n - 1; ++i)
+    {
+        for (int j = 0; j < n - i - 1; ++j)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+}
+
 int main()
 {
-    int arr[50], size, num, plc, value;
-    cout << "Enter the size of arr:";
-    cin >> size;
-
-    cout << "Enter the values of array \n";
-    for (int i = 1; i <= size; i++)
+    vector<int> arr = {4, 3, 5, 2, 6, 8};
+    bubblesort(arr);
+    for (int i : arr)
     {
-        cout << i << " position: ";
-        cin >> arr[i];
-    }
-
-    cout << "Enter the value which you wants to enter: ";
-    cin >> value;
-
-    cout << "Enter the position where the element you wants to enter: ";
-    cin >> plc;
-
-    for (int k = size; k >= plc; k--)
-    {
-        arr[k + 1] = arr[k];
-        arr[plc] = value;
-    }
-
-    cout << "The elements are: ";
-    for (int i = 1; i <= size + 1; i++)
-    {
-        cout << arr[i] << "\n";
-        return 0;
+        cout << i << endl;
     }
 }
