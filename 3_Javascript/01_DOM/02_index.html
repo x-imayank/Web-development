@@ -13,6 +13,7 @@
   </head>
   <body>
     <div class="parent">
+        <!-- 17 Nodes -->
       <div class="day">Monday</div>
       <div class="day">Tuesday</div>
       <div class="day">Wednesday</div>
@@ -32,6 +33,18 @@
             console.log(element.innerHTML)
             
         }
+
+        parent.children[0].style.color = 'red'
+
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+
+        const dayOne = document.querySelector('.day')
+        console.log(dayOne.innerHTML)
+
+        console.log(dayOne.nextElementSibling.innerHTML)
+
+        console.log("NODES: ",parent.childNodes)
     </script>
   </body>
 </html>
