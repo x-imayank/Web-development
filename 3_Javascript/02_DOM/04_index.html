@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | 4</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+        <li>Python</li>
+        <li class="n">Ruby</li>
+        <li>Java</li>
+    </ul>
+
+
+    <script>
+        const body1 = document.querySelector("body");
+        body1.style.backgroundColor = "black";
+        body1.style.color = "Red";
+
+        function addLanguage(langName) {
+            const newEle = document.createElement("li");
+            newEle.innerHTML = `${langName}`;
+            document.querySelector(".n").appendChild(newEle);
+        }
+        addLanguage("Hello");
+
+
+        // Best approach
+        function addOptilanguage(langName) {
+            const newLi = document.createElement('li');
+            newLi.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(newLi)
+        }
+        addOptilanguage('Golang')
+
+
+        // Edit a value in li
+        const secondLan = document.querySelector("li:nth-child(2)")
+        // secondLan.innerHTML = "Mojo"
+        const newLi = document.createElement('li')
+        newLi.textContent = "Mojo"
+        secondLan.replaceWith(newLi)
+
+
+
+        // Delete element
+        const lan = document.querySelector('li:last-child')
+        lan.remove()
+    </script>
+</body>
+</html>
