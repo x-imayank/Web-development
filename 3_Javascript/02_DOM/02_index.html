@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | 2</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+        <!-- 17 Nodes -->
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <div class="day">Friday</div>
+      <div class="day">Saturday</div>
+      <div class="day">Sunday</div>
+    </div>
+    <script>
+        const parent = document.querySelector('.parent')
+        console.log(parent);
+        console.log(parent.children);
+        console.log(parent.children[1].innerHTML);
+
+        for (let i = 0; i < parent.children.length; i++) {
+            const element = parent.children[i];
+            console.log(element.innerHTML)
+            
+        }
+
+        parent.children[0].style.color = 'red'
+
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+
+        const dayOne = document.querySelector('.day')
+        console.log(dayOne.innerHTML)
+
+        console.log(dayOne.nextElementSibling.innerHTML)
+
+        console.log("NODES: ",parent.childNodes)
+    </script>
+  </body>
+</html>
