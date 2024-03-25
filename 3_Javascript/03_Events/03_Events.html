@@ -53,7 +53,7 @@
 
     document.getElementById("owl").addEventListener("click", (e) => {
       console.log(e);
-    }, false); 
+    }, false);
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget
     // clientX, clientY, screenX, screenY
@@ -71,11 +71,11 @@
     document.getElementById('owl').addEventListener('click', (a) => {
       console.log("Clicked owl") // first print this.
     }, false)
-    
+
     // document.getElementById('images').addEventListener('click', (a) => {
     //   console.log("Clicked inside the ul") // First print this
     // }, true)
-    
+
     // document.getElementById('owl').addEventListener('click', (a) => {
     //   console.log("Clicked owl") // second print this.
     // }, true)
@@ -84,6 +84,16 @@
       console.log("Clicked owl") // first print this.
       a.stopPropagation() // By the help of stop propagation the element not goes up (bubbling not occurs).
     }, false)
+
+
+    // For google we are not allowing to open.
+    document.getElementById('google').addEventListener('click', function (g) {
+      g.preventDefault() //url are not working by the help of this
+      g.stopPropagation() // Stop the bubbling in this
+      console.log("google clicked")
+    }, false)
+
+    
   </script>
 </body>
 
