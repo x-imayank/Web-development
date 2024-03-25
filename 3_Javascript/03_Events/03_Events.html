@@ -93,7 +93,17 @@
       console.log("google clicked")
     }, false)
 
-    
+
+
+    // Disable all the images with single click
+    document.querySelector('#images').addEventListener('click', (img) => {
+      // console.log(img.target.parentNode);
+      let removeIt = img.target.parentNode // By the help of parentNode we select all the nodes with the id which is clicked.
+      removeIt.remove() // alter selecting all the nodes simply remove it
+
+      // method 2 for removing
+      // removeIt.parentNode.removeChild(removeIt)
+    },false)
   </script>
 </body>
 
