@@ -1,76 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVENTS</title>
-  </head>
-  <body style="background-color: grey">
-    <h2>Amazing images</h2>
-    <div>
-      <ul id="images">
-        <li>
-          <img
-            width="200px"
-            id="photoshop"
-            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt="photoshop"
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="japan"
-            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="river"
-            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="owl"
-            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="prayer"
-            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <a style="color: aliceblue" href="https://google.com" id="google"
-            >Google</a
-          >
-        </li>
-      </ul>
-    </div>
 
-    <script>
-      // document.getElementById('owl').onclick = function(){
-      //     alert('Owl clicked')
-      // }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVENTS</title>
+</head>
 
-      document.getElementById("owl").addEventListener("click", (e) => {
-        alert("Owl clicked");
-      });
-      // type, timestamp, defaultPrevented
-      // target, toElement, srcElement, currentTarget
-      // clientX, clientY, screenX, screenY
-      // keyCode
+<body style="background-color: grey">
+  <h2>Amazing images</h2>
+  <div>
+    <ul id="images">
+      <li>
+        <img width="200px" id="photoshop"
+          src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="photoshop" />
+      </li>
+      <li>
+        <img width="200px" id="japan"
+          src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <img width="200px" id="river"
+          src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <img width="200px" id="owl"
+          src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <img width="200px" id="prayer"
+          src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <a style="color: aliceblue" href="https://google.com" id="google">Google</a>
+      </li>
+    </ul>
+  </div>
 
-      // Event propogation
-    </script>
-  </body>
+  <script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('Owl clicked')
+    // }
+
+    document.getElementById("owl").addEventListener("click", (e) => {
+      alert("Owl clicked");
+    });
+
+    document.getElementById("owl").addEventListener("click", (e) => {
+      console.log(e);
+    }, false); 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // keyCode
+
+
+    // Flase is use for bubbling.
+    // True is use for capturing.
+
+    // Event propogation :- It is bubbling value goes down to up.
+    document.getElementById('images').addEventListener('click', (a) => {
+      console.log("Clicked inside the ul") // second print this
+    }, false)
+
+    document.getElementById('owl').addEventListener('click', (a) => {
+      console.log("Clicked owl") // first print this.
+    }, false)
+    
+    // document.getElementById('images').addEventListener('click', (a) => {
+    //   console.log("Clicked inside the ul") // First print this
+    // }, true)
+    
+    // document.getElementById('owl').addEventListener('click', (a) => {
+    //   console.log("Clicked owl") // second print this.
+    // }, true)
+
+    document.getElementById('owl').addEventListener('click', (a) => {
+      console.log("Clicked owl") // first print this.
+      a.stopPropagation() // By the help of stop propagation the element not goes up (bubbling not occurs).
+    }, false)
+  </script>
+</body>
+
 </html>
