@@ -66,6 +66,7 @@
     // Event propogation :- It is bubbling value goes down to up.
     document.getElementById('images').addEventListener('click', (a) => {
       console.log("Clicked inside the ul") // second print this
+      
     }, false)
 
     document.getElementById('owl').addEventListener('click', (a) => {
@@ -97,13 +98,19 @@
 
     // Disable all the images with single click
     document.querySelector('#images').addEventListener('click', (img) => {
-      // console.log(img.target.parentNode);
-      let removeIt = img.target.parentNode // By the help of parentNode we select all the nodes with the id which is clicked.
-      removeIt.remove() // alter selecting all the nodes simply remove it
+      console.log(img.target.tagName)
+      if (img.target.tagName === 'IMG') {
 
-      // method 2 for removing
-      // removeIt.parentNode.removeChild(removeIt)
-    },false)
+        // console.log(img.target.parentNode);
+        let removeIt = img.target.parentNode // By the help of parentNode we select all the nodes with the id which is clicked.
+        removeIt.remove() // alter selecting all the nodes simply remove it
+
+
+
+        // method 2 for removing
+        // removeIt.parentNode.removeChild(removeIt)
+      }
+    }, false)
   </script>
 </body>
 
