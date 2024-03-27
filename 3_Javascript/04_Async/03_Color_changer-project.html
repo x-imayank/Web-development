@@ -27,7 +27,6 @@
     }
 
 
-
     const start = document.querySelector('.start')
     start.addEventListener('click', function () {
         const div = document.querySelector('body');
@@ -37,9 +36,9 @@
         }
         const setId = setInterval(chngClr, 1000)
 
-        const stopId = document.getElementsByClassName('stop').addEventListener('click',function(){
+        const stopId = document.querySelector('.stop').addEventListener('click', () => {
             clearInterval(setId)
-        })
+        });
     })
 </script>
 
