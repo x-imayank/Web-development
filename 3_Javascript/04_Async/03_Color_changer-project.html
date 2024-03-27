@@ -17,14 +17,29 @@
 
 <script>
 
-    
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+
 
     const start = document.querySelector('.start')
-    start.addEventListener('click', function (a) {
-        const col = function () {
-            document.querySelector('body').style.backgroundColor = getRandomColor();
+    start.addEventListener('click', function () {
+        const div = document.querySelector('body');
+
+        function chngClr() {
+            div.style.backgroundColor = getRandomColor()
         }
-        setInterval(col, 1000)
+        const setId = setInterval(chngClr, 1000)
+
+        const stopId = document.getElementsByClassName('stop').addEventListener('click',function(){
+            clearInterval(setId)
+        })
     })
 </script>
 
