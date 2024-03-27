@@ -16,13 +16,15 @@
 </body>
 
 <script>
+
+    
+
     const start = document.querySelector('.start')
-    start.addEventListener('click',function(a){
-        const color = function(){
-            start.setInterval(() => {
-                document.querySelector('body').style = 'red'
-            }, 1000);
+    start.addEventListener('click', function (a) {
+        const col = function () {
+            document.querySelector('body').style.backgroundColor = getRandomColor();
         }
+        setInterval(col, 1000)
     })
 </script>
 
