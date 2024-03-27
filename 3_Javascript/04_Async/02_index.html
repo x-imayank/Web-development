@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Second javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+</body>
+
+<script>
+    /*setInterval(function () {
+        console.log('Javascript', Date.now());
+    }, 2000)*/
+
+    const sayDate = function (js) {
+        console.log(js);
+    }
+    // const intID = setInterval(sayDate, 1000, "Javascript")
+
+    // clearInterval(intID)
+
+    // Now make start stop.
+    const start = document.querySelector('#start').addEventListener('click', function () {
+       const start =  function() {
+            console.log('Javascript',Date.now())
+        }
+        const startID = setInterval(start, 1000, (click = start));
+
+        const stop = document.getElementById('stop').addEventListener('click',()=>{
+            clearInterval(startID);
+        });
+    })
+
+
+</script>
+
+</html>

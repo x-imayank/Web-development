@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascync</title>
+</head>
+<body>
+        <h1>Hello javascript</h1>
+        <button id="stop">Stop</button>
+
+</body>
+<script>
+    // Set time out
+    // method1
+
+    /*setTimeout((t) => {
+        console.log('Javascript')
+    }, 2000);*/
+
+    // method2
+
+    // const name = function(){
+    //     console.log('Javascript2')
+    // }
+    // setTimeout(name,3000)
+
+    const display = function(n){
+        document.querySelector('h1').innerHTML = 'Hello world'
+    }
+
+    setTimeout(display,2000)
+    
+    const changeMe = setTimeout(display,2000)
+    // clear time out
+    const stopMe = document.getElementById('stop')
+    stopMe.addEventListener('click',()=>{
+        clearTimeout(changeMe);
+    })
+    
+
+</script>
+</html>
