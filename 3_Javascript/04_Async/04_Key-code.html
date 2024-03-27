@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="key">
+
+    </div>
+</body>
+<script>
+    const insert = document.querySelector('.key')
+
+    window.addEventListener('keydown',(a)=>{
+        insert.innerHTML = `
+        <div class="color">
+    <table style = "border: 2px solid black,text-align:center">
+        <tr>
+            <th style = "border: 2px solid black">Key</th>
+            <th style = "border: 2px solid black">Keycode</th>
+            <th style = "border: 2px solid black">Code</th>
+        </tr>
+        <tr>
+            <td style = "border: 2px solid black">${a.key === " "? 'Space' : a.key}</td>
+            <td style = "border: 2px solid black">${a.keyCode}</td>
+            <td style = "border: 2px solid black">${ a.code}</td>
+        </tr>
+    </table>
+</div>
+
+
+        `
+    })
+</script>
+
+</html>
