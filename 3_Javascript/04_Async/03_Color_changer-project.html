@@ -17,6 +17,13 @@
 
 <script>
     const start = document.querySelector('.start')
+    start.addEventListener('click',function(a){
+        const color = function(){
+            start.setInterval(() => {
+                document.querySelector('body').style = 'red'
+            }, 1000);
+        }
+    })
 </script>
 
 </html>
